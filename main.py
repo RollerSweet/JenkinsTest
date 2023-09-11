@@ -1,3 +1,7 @@
-from pprint import pprint
+from fastapi import FastAPI
 
-pprint('Kaki')
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "Hello, World!"}
