@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'docker-agent-python' // Agent that we created
+        label 'docker-agent1' // Agent that we created
     }
 
     // Define the time interval for polling GitHub (e.g., every 5 minutes)
